@@ -232,7 +232,7 @@ const Items = () => {
              Array.from(items).map((item, index) => {
                 return(
                   <tr key={index}>
-                    <td><a href={item.url} target="_blank">{item.name}</a></td>
+                    <td><a href={item.url} target="_blank" rel="noreferrer">{item.name}</a></td>
                     <td>{item.currentPrice}</td>
                     <td>{item.requiredPrice}</td>
                     <td><button className="button-1" onClick={() =>handleEditItem(index)}>Edit</button></td>

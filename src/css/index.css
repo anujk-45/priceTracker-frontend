@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap");
+
+:root {
+  --color1: #606060;
+  --color2: #eae7dc;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand";
+}
+
+body {
+  background: var(--color2);
+  color: var(--color1);
+}
+
+.content {
+  max-width: 80%;
+  margin: auto;
+  padding: 20px;
+  padding-top: 0;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 100%;
+  border-bottom: 1px solid var(--color1);
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+/* .navbar button {
+  background: var(--color1);
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 6px;
+  margin-left: 16px;
+  border: rorder;
+}
+
+.navbar .links a:hover,
+button:hover {
+  background: var(--color1);
+  color: var(--color2);
+  border-radius: 5px;
+  cursor: pointer;
+} */
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.right a {
+  color: var(--color1);
+  font-size: 20px;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid var(--color1);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.right a:hover {
+  background: var(--color1);
+  color: var(--color2);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.left .centered p {
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.vl {
+  border-left: 3px solid var(--color1);
+  position: absolute;
+  left: 50%;
+  height: 80vh;
+  top: 10vh;
+  z-index: 2;
+}
+
+.centered .form {
+  width: 300px;
+}
+
+.centered .form label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.centered .form input {
+  display: block;
+  background: transparent;
+  width: 100%;
+  padding: 10px;
+  color: var(--color1);
+  background: var(--color2);
+  margin-bottom: 10px;
+  border: 1px solid var(--color1);
+  border-radius: 5px;
+}
+
+.centered .form button {
+  color: var(--color1);
+  background: var(--color2);
+  padding: 10px;
+  margin-top: 15px;
+  border: 2px solid var(--color1);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.centered .form button:hover {
+  cursor: pointer;
+  color: var(--color2);
+  background: var(--color1);
+}
+
+.itemstable {
+  width: 100%;
+  padding: 20px;
+  border-collapse: collapse;
+  margin: 25px auto;
+}
+
+.itemstable thead tr {
+  background: var(--color2);
+  color: var(--color1);
+  text-align: left;
+  font-weight: bold;
+  border: 1px solid var(--color1);
+}
+
+.itemstable th,
+.itemstable td {
+  padding: 12px 15px;
+}
+
+.button-1 {
+  background-color: var(--color2);
+  color: var(--color1);
+  padding: 10px;
+  border: 1px solid var(--color1);
+  border-radius: 5px;
+  width: 100%;
+  min-width: fit-content;
+  max-width: 7rem;
+}
+
+.button-1:hover {
+  background: var(--color1);
+  color: var(--color2);
+  cursor: pointer;
+}
+
+.itemstable a {
+  text-decoration: none;
+}
+
+.itemstable a {
+  color: var(--color1);
+}
+
+.form-section {
+  margin: 25px auto;
+}
+
+.form-section .product-form {
+  margin: 0 auto;
+}
+
+.form-section .product-form label{
+  display: block;
+  text-align: left;
+  width: 60%;
+  background: transparent;
+}
+
+.form-section .product-form input{
+  width: 60%;
+  color: var(--color1);
+  padding: 0.5rem 0.5rem;
+  outline: none;
+  margin: 10px 0;
+  box-sizing: border-box;
+  display: block;
+  background: transparent;
+  border: none;
+  border: 1px solid var(--color1);
+}
+
+/* .form-section .product-form button {
+
+  margin-left: 1rem;
+} */
+
+.form-section .hidden-product-form {
+  display: none;
+}
+
+.form-section .form-heading {
+  margin-bottom: 1rem;
+}
+
+.form-section .form-heading button {
+  margin-left: 1rem;
+}

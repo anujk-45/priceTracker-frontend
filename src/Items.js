@@ -43,7 +43,7 @@ const Items = () => {
       setErr(true)
       console.log(e)
     })
-  },[token, random])
+  },[token, random, API])
 
   const addItem = async() => {
     setItemStatus("Addding product...");
